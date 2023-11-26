@@ -9,15 +9,6 @@
 background: var(--White, #FFF);
 }
 
-.navbar-container {
-    display: flex;
-    padding: 0px 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
 .navbar-container1 {
     display: flex;
 width: 1216px;
@@ -62,6 +53,7 @@ letter-spacing: -0.9px;
 align-items: flex-start;
 gap: 16px;
 transition: 1s;
+flex-wrap: wrap;
 }
 
 .nav-item {
@@ -247,6 +239,7 @@ height: 23.12px;
     flex-direction: column;
     margin-bottom: 48px;
     margin-right: 108px;
+    flex-wrap: wrap;
 }
 
 .text-and-button {
@@ -427,6 +420,7 @@ justify-content: center;
 align-items: center;
 gap: 8px;
 align-self: stretch;
+flex-wrap: wrap;
 }
 
 .social-network {
@@ -434,6 +428,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 24px;
+flex-wrap: wrap;
 }
 
 .social-img {
@@ -466,9 +461,26 @@ font-weight: 400;
 line-height: 20px;
 }
 
-@media all and (max-width: 800px) {
-    .max{
-        display: flex;
+@media screen and (max-width: 768px) {
+    .all {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .max {
         flex-wrap: wrap;
     }
-}
+
+    .navbar-container1 {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+    }
+  }
