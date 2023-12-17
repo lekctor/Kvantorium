@@ -249,6 +249,126 @@ height: 23.12px;
     flex: 1 0 0;
 }
 
+.directions {
+    display: flex;
+padding: 72px 112px 96px 112px;
+flex-direction: column;
+align-items: flex-start;
+gap: 64px;
+align-self: stretch;
+}
+
+.Title {
+    display: flex;
+width: 1216px;
+align-items: center;
+gap: 10px;
+}
+
+h2 {
+    color: #282828;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.8px;
+}
+
+.directions-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 56px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+min-width: 400px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 20px;
+flex: 1 0 0;
+}
+
+.icon-container {
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 12px;
+border: 1px solid #E5E5E5;
+}
+
+.icon {
+    display: flex;
+padding: 6px;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+width: 40px;
+height: 40px;
+}
+
+h3 {
+    align-self: stretch;
+    color: #000;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.44px;
+}
+
+p {
+    align-self: stretch;
+    color: #797878;
+font-family: Libre Franklin;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.9px;
+}
+
+.button-outlined {
+    display: flex;
+justify-content: center;
+align-items: center;
+display: flex;
+padding: 16px 0px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+text-decoration: none;
+}
+
+.button-outlined:hover {
+    transform: scale(1.01);
+}
+
+.button-text-direction {
+color: #0F63E0;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+text-decoration: none;
+}
+
+.button-img {
+    width: 20px;
+height: 20px;
+}
+
 .information {
     display: flex;
     padding: 32px 80px;
