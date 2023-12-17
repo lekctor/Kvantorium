@@ -106,6 +106,13 @@ transition: 1s;
       transform: scale(1.2)
 }
 
+.all {
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 .container{
     margin-right: 112px;
 }
@@ -115,22 +122,22 @@ h1, p {
 }
 
 .website {
-    display: flex;
+    color: white;
     align-self: stretch;
     flex-wrap: wrap;
-    color: var(--Pri-Purple-400, #582066);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px; 
+    text-align: center;
 }
 
 .firststeps {
-    display: flex;
+    text-align: center;
     align-self: stretch;
     flex-wrap: wrap;
-    color: #282828;
+    color: white;
     font-family: Inter;
     font-size: 48px;
     font-style: normal;
@@ -140,10 +147,11 @@ h1, p {
 }   
 
 .Story {
-    display: flex;
+    text-align: center;
     align-self: stretch;
     color: var(--neutral-400, #5A6475);
     flex-wrap: wrap;
+    color: white;
 
     /* Para/Medium/Regular */
     font-family: Inter;
@@ -159,7 +167,8 @@ h1, p {
     padding: 22px 24px;
     text-decoration: none;
     color: white;
-    background-color: rgb(44, 42, 42);
+    border-radius: 8px;
+    background: #3B866F;
     border-radius: 16px;
     width: 132px;
     justify-content: center;
@@ -197,40 +206,51 @@ margin-right: 12px;
 text-decoration: none;
 }
 
-.button-img {
+.button-img-main {
 width: 24px;
 height: 23.12px;
 }
 
+
 .photo {
     display: flex;
-    height: 393px;
-    min-width: 343px;
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1 0 0;
-    border-radius: 24px;
-}
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    background-image: url('Image (3).png');
+   }
 
+   
 .max {
     display: flex;
     align-items: center;
     align-content: center;
     gap: 32px 108px;
     flex: 1 0 0;
+    position: absolute;
 }
 
 .content {
     display: flex;
-    padding: 37px 112px;
-    align-items: stretch;
-    align-content: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url('teamrobotics.jpg');
+    background-size: cover;
+    height: 70vh;
+    background-color: #f0f0f0;
+    background-position: center center;
+    position: relative;
 }
+
+.overlay {
+    width: 100%; /* Задаем ширину оверлея */
+    height: 100%; /* И высоту */
+    background-color: rgba(0, 0, 0, .5); /* Цвет и уровень прозрачности */
+    top: 0; /* Размещаем оверлей сверху */
+    left: 0; /* И слева */
+  }
 
 .text-container {
     display: flex;
@@ -238,24 +258,36 @@ height: 23.12px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    align-self: stretch;
 }
 
 .text-and-button {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 48px;
     flex: 1 0 0;
+}
+
+.directions-container {
+    display: flex;
+    justify-content: flex-start;
+    display: flex;
+    width: 1216px;
+    align-items: center;
+    align-content: center;
+    gap: 56px;
+    align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .directions {
     display: flex;
 padding: 72px 112px 96px 112px;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 gap: 64px;
 align-self: stretch;
+justify-content: center;
 }
 
 .Title {
@@ -275,18 +307,10 @@ line-height: normal;
 letter-spacing: -1.8px;
 }
 
-.directions-container {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 56px;
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-
 .item {
     display: flex;
-min-width: 400px;
+    min-width: 300px;
+max-width: 400px;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
@@ -323,12 +347,13 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -1.44px;
+margin: 0px;
 }
 
 p {
     align-self: stretch;
     color: #797878;
-font-family: Libre Franklin;
+font-family: Inter;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
